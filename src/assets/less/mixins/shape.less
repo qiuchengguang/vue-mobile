@@ -1,0 +1,15 @@
+/* 下三角形 */
+.triangle-down(@value,@color){
+    width: 0;height: 0;
+    border-left: @value solid transparent;
+    border-right: @value solid transparent;
+    border-bottom: @value*2 solid @color;
+}
+
+/* 左三角形 */
+.triangle-left(@value,@color){
+    width: 0;height: 0;
+    border-top: @value solid transparent;
+    border-bottom: @value solid transparent;
+    border-right: @value*2 solid @color;
+}

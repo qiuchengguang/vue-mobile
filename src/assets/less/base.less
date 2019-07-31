@@ -1,0 +1,126 @@
+/* reset */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+textarea{font-family:"PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;}
+/* function */
+.f-clear:after{display:block;visibility:hidden;clear:both;overflow:hidden;height:0;content:".";}
+.f-clear{zoom:1;}
+.f-ib{display:inline-block;*display:inline;*zoom:1;}
+.f-dn{display:none;}
+.f-db{display:block;}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.f-pr{position:relative;}
+.f-pa{position:absolute;}
+.f-pazi{position:absolute;z-index:10;}
+.f-prz{position:relative;zoom:1;}
+.f-oh{overflow:hidden;}
+.f-fs12{font-size:12px;}
+.f-fs14{font-size:14px;}
+.f-fs16{font-size:16px;}
+.f-fs18{font-size:18px;}
+.f-fs20{font-size:20px;}
+
+.f-mt0{margin-top:0 !important;}
+.f-mt5{margin-top:5px;}
+.f-mb5{margin-bottom:5px;}
+.f-ml5{margin-left:5px;}
+.f-mr5{margin-right:5px;}
+
+.f-mt10{margin-top:10px;}
+.f-ml10{margin-left:10px;}
+.f-mr10{margin-right:10px;}
+.f-mb10{margin-bottom:10px;}
+
+.f-mt15{margin-top:15px;}
+.f-mb15{margin-bottom:15px;}
+
+.f-mt20{margin-top:20px;}
+.f-mb20{margin-bottom:20px;}
+.f-ml20{margin-left:20px;}
+.f-mr20{margin-right:20px;}
+
+.f-mt30{margin-top:30px;}
+.f-mb30{margin-bottom:30px;}
+.f-ml30{margin-left: 30px;}
+.f-mr30{margin-right: 30px;}
+
+.f-pd10{padding: 10px;}
+.f-pdt10{padding-top: 10px;}
+.f-pdb10{padding-bottom: 10px;}
+.f-pdl5{padding-left: 5px;}
+.f-pdr5{padding-right: 5px;}
+.f-pdt20{padding-top: 20px;}
+.f-pdb20{padding-bottom: 20px;}
+.f-pd15{padding:15px;}
+.f-hfp{height:100%;}
+.f-wfp{width:100%;}
+
+.f-b-box{box-sizing: border-box}
+.f-fwn{font-weight:normal;}
+.f-fwb{font-weight:bold;}
+.f-tal{text-align:left;}
+.f-tac{text-align:center;}
+.f-tar{text-align:right;}
+.f-taj{text-align:justify;text-justify:inter-ideograph;}
+.f-vam,.f-vama *{vertical-align:middle;}
+.f-wsn{white-space:nowrap;word-wrap:normal;}
+.f-pre{overflow:hidden;text-align:left;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;}
+.f-wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}
+.f-ti{overflow:hidden;text-indent:-30000px;}
+.f-ti2{text-indent:2em;}
+.f-lhn{line-height:normal;}
+.f-tdu,.f-tdu:hover{text-decoration:underline;}
+.f-tdn,.f-tdn:hover{text-decoration:none;}
+.f-toe{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;}
+.f-ofya{overflow-y:auto;}
+.f-ofxs{overflow-x:scroll;}
+.f-ofys{overflow-y:scroll;}
+.f-csp{cursor:pointer;}
+.f-csd{cursor:default;}
+.f-csh{cursor:help;}
+.f-csm{cursor:move;}
+.f-usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-o-user-select:none;}
+
+/* 常用组件类 */
+.g-x-header.vux-header{width:100%;position:absolute;left:0;top:0;z-index:100;}
+.g-footer{-webkit-box-sizing: border-box;box-sizing: border-box;width:100%;position:absolute;left:0;bottom:0;z-index:100;}
+
+a:hover,
+a:active{text-decoration:none;}
+
+/* 阿里icon图标 */
+@font-face {
+  font-family: 'alIconfont';  /* project id 669011 */
+  src: url('//at.alicdn.com/t/font_669011_hahpfb828mnghkt9.eot');
+  src: url('//at.alicdn.com/t/font_669011_hahpfb828mnghkt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_669011_hahpfb828mnghkt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_669011_hahpfb828mnghkt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_669011_hahpfb828mnghkt9.svg#alIconfont') format('svg');
+}
+.iconfont{
+    font-family:"alIconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*全局设置*/
+html,body,#app{height:100%;
+    // -webkit-overflow-scrolling: touch;
+    // overflow-scrolling: touch;
+}
+body{color:#333;font-family:"PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;}
+
+/*fixbug*/
+body{
+    //ios 微信键盘完成无反应bug 这样还是youbug
+    .vux-popup-dialog{
+        position: absolute;
+    }
+}
